@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92612f08002691aa83e65bfe81140526 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_92612f08002691aa83e65bfe81140526" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92612f08002691aa83e65bfe81140526 = L.map(
+                "map_92612f08002691aa83e65bfe81140526",
+                {
+                    center: [-1.95, 30.05],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7c2d3db0edf29df0acc4072a5a3abf0e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7c2d3db0edf29df0acc4072a5a3abf0e.addTo(map_92612f08002691aa83e65bfe81140526);
+        
+    
+            var marker_cluster_2d5205d75e00f7500f70a1044bb20ae9 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_6c374cab50f4797b33086e7a7577ee4b = L.marker(
+                [-1.3, 30.3],
+                {
+}
+            ).addTo(marker_cluster_2d5205d75e00f7500f70a1044bb20ae9);
+        
+    
+            var div_icon_95f772b61a2711502cf8b5816468c42f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                background-color:blue;\n                color:white;\n                padding:2px 4px;\n                border-radius:3px;\n                font-size:10px;\n                text-align:center;\n                border: 1px solid black;\n                \"\u003e\n                \ud83d\udca7 127 mm\n            \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+        
+    
+        var popup_0836cac18865b7deaa6e84b19734b725 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41b0e5a1e2a85f5bcbf9e43f86686de8 = $(`<div id="html_41b0e5a1e2a85f5bcbf9e43f86686de8" style="width: 100.0%; height: 100.0%;"><b>Highest Rainfall</b><br>Station: Nyakiga-Karama<br>Value: 127 mm</div>`)[0];
+                popup_0836cac18865b7deaa6e84b19734b725.setContent(html_41b0e5a1e2a85f5bcbf9e43f86686de8);
+            
+        
+
+        marker_6c374cab50f4797b33086e7a7577ee4b.bindPopup(popup_0836cac18865b7deaa6e84b19734b725)
+        ;
+
+        
+    
+    
+            marker_6c374cab50f4797b33086e7a7577ee4b.bindTooltip(
+                `<div>
+                     Nyakiga-Karama (127 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c374cab50f4797b33086e7a7577ee4b.setIcon(div_icon_95f772b61a2711502cf8b5816468c42f);
+            
+    
+            var marker_fbd45f00be96dda5ee94c9a9441d058a = L.marker(
+                [-2.6, 29.7],
+                {
+}
+            ).addTo(marker_cluster_2d5205d75e00f7500f70a1044bb20ae9);
+        
+    
+            var div_icon_4230cec9ff2d3fba408fa8eae80de50b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                background-color:navy;\n                color:white;\n                padding:2px 4px;\n                border-radius:3px;\n                font-size:10px;\n                text-align:center;\n                border: 1px solid black;\n                \"\u003e\n                \ud83d\udca7 384 mm\n            \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+        
+    
+        var popup_dd2e51b8ecdeec8817737e2e19e46caf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da86b74b0194c607ad161fd28752b0c2 = $(`<div id="html_da86b74b0194c607ad161fd28752b0c2" style="width: 100.0%; height: 100.0%;"><b>Highest Monthly Rainfall</b><br>Station: Rubona<br>Value: 384 mm</div>`)[0];
+                popup_dd2e51b8ecdeec8817737e2e19e46caf.setContent(html_da86b74b0194c607ad161fd28752b0c2);
+            
+        
+
+        marker_fbd45f00be96dda5ee94c9a9441d058a.bindPopup(popup_dd2e51b8ecdeec8817737e2e19e46caf)
+        ;
+
+        
+    
+    
+            marker_fbd45f00be96dda5ee94c9a9441d058a.bindTooltip(
+                `<div>
+                     Rubona (384 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbd45f00be96dda5ee94c9a9441d058a.setIcon(div_icon_4230cec9ff2d3fba408fa8eae80de50b);
+            
+    
+            var marker_69e2353154d211ba27004a5564a2245b = L.marker(
+                [-1.75, 29.63],
+                {
+}
+            ).addTo(marker_cluster_2d5205d75e00f7500f70a1044bb20ae9);
+        
+    
+            var div_icon_6f061fe149817b194aecb0010a9f3575 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                background-color:skyblue;\n                color:white;\n                padding:2px 4px;\n                border-radius:3px;\n                font-size:10px;\n                text-align:center;\n                border: 1px solid black;\n                \"\u003e\n                \ud83d\udca7 42.2 mm\n            \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+        
+    
+        var popup_ce1ca8eae42f1724ebc39d2725751fc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6c9fc936eb275e07f3b2d512ca65725 = $(`<div id="html_d6c9fc936eb275e07f3b2d512ca65725" style="width: 100.0%; height: 100.0%;"><b>Lowest Monthly Rainfall</b><br>Station: Kabaya<br>Value: 42.2 mm</div>`)[0];
+                popup_ce1ca8eae42f1724ebc39d2725751fc3.setContent(html_d6c9fc936eb275e07f3b2d512ca65725);
+            
+        
+
+        marker_69e2353154d211ba27004a5564a2245b.bindPopup(popup_ce1ca8eae42f1724ebc39d2725751fc3)
+        ;
+
+        
+    
+    
+            marker_69e2353154d211ba27004a5564a2245b.bindTooltip(
+                `<div>
+                     Kabaya (42.2 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69e2353154d211ba27004a5564a2245b.setIcon(div_icon_6f061fe149817b194aecb0010a9f3575);
+            
+    
+            var circle_marker_81e532e633d60ebff4ff606678c9efce = L.circleMarker(
+                [-2.45, 29.35],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2d5205d75e00f7500f70a1044bb20ae9);
+        
+    
+        var popup_e19f9ff4721625dc6f6a6a0ccc607feb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e708ec5b678b2c6de1f9fbb953c4153f = $(`<div id="html_e708ec5b678b2c6de1f9fbb953c4153f" style="width: 100.0%; height: 100.0%;"><b>Lowest Min Temp</b><br>Station: Kitabi Tea<br>Value: 7.4°C</div>`)[0];
+                popup_e19f9ff4721625dc6f6a6a0ccc607feb.setContent(html_e708ec5b678b2c6de1f9fbb953c4153f);
+            
+        
+
+        circle_marker_81e532e633d60ebff4ff606678c9efce.bindPopup(popup_e19f9ff4721625dc6f6a6a0ccc607feb)
+        ;
+
+        
+    
+    
+            circle_marker_81e532e633d60ebff4ff606678c9efce.bindTooltip(
+                `<div>
+                     Kitabi Tea (7.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c87873a5204faeaf44be7bd9e727708d = L.circleMarker(
+                [-2.72, 29.01],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2d5205d75e00f7500f70a1044bb20ae9);
+        
+    
+        var popup_3373edfe7a68db25a716075cd8bfa69f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12114c3d3432dc0d930f4e03ced66157 = $(`<div id="html_12114c3d3432dc0d930f4e03ced66157" style="width: 100.0%; height: 100.0%;"><b>Highest Min Temp</b><br>Station: Bugarama<br>Value: 18.9°C</div>`)[0];
+                popup_3373edfe7a68db25a716075cd8bfa69f.setContent(html_12114c3d3432dc0d930f4e03ced66157);
+            
+        
+
+        circle_marker_c87873a5204faeaf44be7bd9e727708d.bindPopup(popup_3373edfe7a68db25a716075cd8bfa69f)
+        ;
+
+        
+    
+    
+            circle_marker_c87873a5204faeaf44be7bd9e727708d.bindTooltip(
+                `<div>
+                     Bugarama (18.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9db10e6c402d75833cbdc24cc4b4b76e = L.circleMarker(
+                [-2.45, 29.35],
+                {"bubblingMouseEvents": true, "color": "lightcoral", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightcoral", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2d5205d75e00f7500f70a1044bb20ae9);
+        
+    
+        var popup_959155450e0f531dbef61a69974a908d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_933cb448de235b55f480cafced6bcf38 = $(`<div id="html_933cb448de235b55f480cafced6bcf38" style="width: 100.0%; height: 100.0%;"><b>Lowest Max Temp</b><br>Station: Kitabi Tea<br>Value: 16.7°C</div>`)[0];
+                popup_959155450e0f531dbef61a69974a908d.setContent(html_933cb448de235b55f480cafced6bcf38);
+            
+        
+
+        circle_marker_9db10e6c402d75833cbdc24cc4b4b76e.bindPopup(popup_959155450e0f531dbef61a69974a908d)
+        ;
+
+        
+    
+    
+            circle_marker_9db10e6c402d75833cbdc24cc4b4b76e.bindTooltip(
+                `<div>
+                     Kitabi Tea (16.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58a360dcf10e530247d9bd657a091a4e = L.circleMarker(
+                [-1.45, 30.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2d5205d75e00f7500f70a1044bb20ae9);
+        
+    
+        var popup_5ba589d5cb6e6dd5753f5baee39ded71 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d29d52626a24e9dd7b42268e36f39c73 = $(`<div id="html_d29d52626a24e9dd7b42268e36f39c73" style="width: 100.0%; height: 100.0%;"><b>Highest Max Temp</b><br>Station: Gatunda<br>Value: 35.0°C</div>`)[0];
+                popup_5ba589d5cb6e6dd5753f5baee39ded71.setContent(html_d29d52626a24e9dd7b42268e36f39c73);
+            
+        
+
+        circle_marker_58a360dcf10e530247d9bd657a091a4e.bindPopup(popup_5ba589d5cb6e6dd5753f5baee39ded71)
+        ;
+
+        
+    
+    
+            circle_marker_58a360dcf10e530247d9bd657a091a4e.bindTooltip(
+                `<div>
+                     Gatunda (35.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_2d5205d75e00f7500f70a1044bb20ae9.addTo(map_92612f08002691aa83e65bfe81140526);
+        
+</script>
+</html>
